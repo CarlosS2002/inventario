@@ -1,11 +1,13 @@
+
 import express from "express";
-import categoriasRoutes from "./routes/categorias.routes.js";
+import categoriaRoutes from "./routes/categorias.routes.js"
 
 const app = express();
 
-// Rutas
-app.use("/api/categorias", categoriasRoutes);
 
-app.set("port", 5000);
+app.set("port",5000)
+
+app.use("/api/categorias",categoriaRoutes)
+
 
 export default app;
